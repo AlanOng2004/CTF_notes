@@ -151,7 +151,7 @@ s/stuff_to_replace/new_stuff/g
 
 jq -s add <file>
 
-jp is a command line tool for processing JSON
+jq is a command line tool for processing JSON
 -s reads all JSON objects from the input into a single array
 add adds lmao
 
