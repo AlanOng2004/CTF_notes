@@ -13,10 +13,10 @@ So we learn that if we want to declare an unsafe function, we need to add
 >   function   
 >}
 
-![pic1](pic1.png)
+![pic1](pics/pic1.png)
 
 So yea we are using an unsafe function without declaring it, which is why the cargo check is screaming at us.
 
-![pic2](pic2.png)
+![pic2](pics/pic2.png)
 
 And now we run the code and get the flag!

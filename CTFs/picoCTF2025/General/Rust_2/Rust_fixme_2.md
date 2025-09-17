@@ -12,7 +12,7 @@ So again we have another rust debugging challenge, so we run
 
 and see what problems we are facing.
 
-![pic1](pic1.png)
+![pic1](pics/pic1.png)
 
 So we are facing an issue where the borrowed_string is not mutable. A great documentation to read about pass by reference and mutable strings in rust is [here](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html).
 
@@ -20,19 +20,19 @@ According to the documentation, if we want to make it so that our pass by refere
 
 > &mut s
 
-![pic2](pic2.png)
+![pic2](pics/pic2.png)
 
 Now we run cargo check again to see what the other problems are.
 
-![pic3](pic3.png)
+![pic3](pics/pic3.png)
 
 We can see that party foul is not mutable and we need to change it so that it is.
 
-![pic4](pic4.png)
+![pic4](pics/pic4.png)
 
 We check again.
 
-![pic5](pic5.png)
+![pic5](pics/pic5.png)
 
 Great! Now we run it and get the flag!
 

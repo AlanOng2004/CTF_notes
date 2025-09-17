@@ -14,7 +14,7 @@ After unzipping and tar -xf the given file, we are given a directory with cargo 
 
 > cargo check
 
-![pic1](pic1.png)
+![pic1](pics/pic1.png)
 
 As we can see the code has 3 main problems.
 

@@ -6,19 +6,19 @@ Cookie Monster has hidden his top-secret cookie recipe somewhere on his website.
 
 We are presented with a website:
 
-![pic1](pic1.png)
+![pic1](pics/pic1.png)
 
 So I logined with some random credentials and it forwarded me to this page:
 
-![pic2](pic2.png)
+![pic2](pics/pic2.png)
 
 This tells me to look at the cookies of this website.
 
-![pic3](pic3.png)
+![pic3](pics/pic3.png)
 
 Look at that, the secret receipe is right there and it is in base64!
 
-![pic4](pic4.png)
+![pic4](pics/pic4.png)
 
 Boom flag.
 

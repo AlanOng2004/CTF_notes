@@ -35,18 +35,18 @@ In a TCP packet there are two parts
 
 Knowing that, we want to hover over the TCP payload option, which highlights the parts of the packet that it relates to. As you can see it is in base64, ending with == as your indicator.
 
-![tcp](tcpheader.png)
+![tcp](pics/tcpheader.png)
 
 We copy the byte by left clicking and copy as ASCII text. Then we paste it into cyberchef and decode it from base64
 
-![chef](chef1.png)
+![chef](pics/chef1.png)
 
 As you can see, we get something very encouraging.
 
 Now we filter the packets by time so it is arranged chronologically and start decoding all the base64 texts.
 
-![filter](filter.png)
+![filter](pics/filter.png)
 
-![chef2](chef2.png)
+![chef2](pics/chef2.png)
 
 And we get the flag!

@@ -20,7 +20,7 @@ This is a very helpful assembly tool to debug your code. After installing GBD on
 
 > gdb ./vuln
 
-![pic1](pic1.png)
+![pic1](pics/pic1.png)
 
 Press CTRL-X CTRL-A to bring up the assembly or you can also type _lay next_. 
 
@@ -46,10 +46,10 @@ To Start debugging your code:
 
 ### Back to attempt
 
-![pic2](pic2.png)
+![pic2](pics/pic2.png)
 
 Checking the full security features of the binary:
-![pic3](pic3.png)
+![pic3](pics/pic3.png)
 
 Lets go through what every one of these means:
 
@@ -69,11 +69,11 @@ Doing this will let us directly call win() and get the flag!
 
 Checking the address of main:
 
-![pic4](pic4.png)
+![pic4](pics/pic4.png)
 
 Checking the address of win:
 
-![pic5](pic5.png)
+![pic5](pics/pic5.png)
 
 Alternatively in gbb, you can also input
 > disassemble main
@@ -86,4 +86,4 @@ To find the difference I used a hex calculator, its 96 in hexadecimal.
 
 Going back to the challenge, I took the address of main and minus-ed 96 from it. This should give me the win address and voila! flag.
 
-![pic6](pic6.png)
+![pic6](pics/pic6.png)

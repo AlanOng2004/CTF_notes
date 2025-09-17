@@ -55,7 +55,7 @@ And you can see from the first letters "CHECKLSB"
 
 LSB is a form of stegenography. So we can just head straight into Cyberchef to decode it.
 
-![cyberchef](LSB.png)
+![cyberchef](pics/LSB.png)
 
 And as you can see, it outputs
 > cGljb0NURntyM2RfMXNfdGgzX3VsdDFtNHQzX2N1cjNfZjByXzU0ZG4zNTVffQ==
@@ -68,7 +68,7 @@ This looks like base64 as it is encoded only in ASCII characters:
 
 Now I decode it from base64:
 
-![base64ed](base64.png)
+![base64ed](pics/base64.png)
 
 Voila we get the flag: 
 > picoCTF{r3d_1s_th3_ult1m4t3_cur3_f0r_54dn355_}

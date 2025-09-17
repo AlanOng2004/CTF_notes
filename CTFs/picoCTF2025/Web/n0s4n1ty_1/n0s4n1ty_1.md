@@ -17,21 +17,21 @@ It is a way of protecting your server by client side attacks. Here is a [documen
 
 So to test how vulnerable this file upload is, I created a random c file that prints hello and uploaded it.
 
-![test](pic1.png)
+![test](pics/pic1.png)
 
 Thats a very good sign, and it also tells us what path it takes.
 
 You can also see that theres a php strip in the link.
 
-![test](pic2.png)
+![test](pics/pic2.png)
 
 And we can see the file we uploaded when trying this path
 
-![test](pic3.png)
+![test](pics/pic3.png)
 
 Now lets start exploiting this. I created a php file with the followig code:
 
-![test](pic4.png)
+![test](pics/pic4.png)
 
 We start with php tags, <?php  ?> which must be wrapped around our payload for the code to be recognised as php.
 
@@ -39,7 +39,7 @@ Then we use system() which executes commands directly on the server. Following t
 
 Now we upload the file and insert our command.
 
-![pic](pic5.png)
+![pic](pics/pic5.png)
 
 Using the hint, we inserted sudo -l, which lists the allowed and forbbiden commands we can run with sudo under our current user account.
 
