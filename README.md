@@ -6,4 +6,6 @@ This repo contains my CTF learning journey:
 - Tools, scripts, and cheat sheets
 - References to guides and blogs
 
+Still a work in progress!
+
 Follow my journey from zero to hero in CTFs.
