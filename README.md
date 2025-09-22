@@ -6,11 +6,6 @@ This repo contains my CTF learning journey:
 - Tools, scripts, and cheat sheets
 - References to guides and blogs
 
-Structure:
-- `challenges/` – challenge-specific notes
-- `writeups/` – category-focused writeups
-- `tools/` – scripts & setup guides
-- `references/` – curated guides
-- `logs/` – daily practice logs
+Still a work in progress!
 
 Follow my journey from zero to hero in CTFs.
