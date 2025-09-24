@@ -61,3 +61,4 @@ When we increment the order to 2, we see that now the items are ordered by their
 When we try to order by 4, we get an Internal Server Error, so we know that there are only 3 columns in the original query.
 
 ![pic9](pics/pic9.png)
+
