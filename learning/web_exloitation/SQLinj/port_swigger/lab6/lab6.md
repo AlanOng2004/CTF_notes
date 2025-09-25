@@ -50,4 +50,10 @@ However, when I was trying this on the lab website, it outputs differently from 
 
 ![pic5](pics/pic5.png)
 
-I have no idea why
+Looking deeper into the link, I see that the browser is encoded additional `%` everytime it is trying to encode `'`.
+
+> Accessories%2527+UNION+SELECT+NULL,+username+%7C%7C+%2527~%2527+%7C%7C+password+FROM+users--
+
+Removing the extra `25`, we solve the lab
+
+![pic6](pics/pic6.png)
