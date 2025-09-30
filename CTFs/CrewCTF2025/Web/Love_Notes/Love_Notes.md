@@ -14,13 +14,11 @@ After signing up and logging in, we see a dashboard to post and view our notes.
 
 ![pics2](pics/pics2.png)
 
-This looks like it could be a SSTI or XSS. Trying all the SSTI testing methods ```{{7*7}}```, just prints the string back to me, which tells me that this is not a SSTI.
-
-Now we look at whether it is possible to inject a script for the bot to execute. However, when we attempt to XSS in either the Title or Content box, the bot doesn't appear to be doing anything. Upon a closer look, we see that the dashboard has a Content Security Policy (CSP) blocking inline script execution.
+This looks like it could be XSS. However, when we attempt to XSS in either the Title or Content box, the bot doesn't appear to be doing anything. Upon a closer look, we see that the dashboard has a Content Security Policy (CSP) blocking inline script execution.
 
 ![pics3](pics/pics3.png)
 
-So it seems that we cannot attempt XSS. Now let's take a closer look at the source code.
+So it seems that we cannot attempt direct XSS execution in the dashboard. Now let's take a closer look at the source code.
 
 ## Looking at Source Code
 
@@ -37,7 +35,7 @@ We are given the source code to the website. There are a few things that catches
 >      { title: '...' }
 >    ];
 
-This tells me that the flag is stored in the enviroment.
+This tells me that the flag is an enviromental variable.
 
 ### Next we have **bot.js**:
 
