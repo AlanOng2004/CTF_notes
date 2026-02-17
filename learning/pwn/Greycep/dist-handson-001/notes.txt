@@ -1,0 +1,3 @@
+0x00000000d00df00d
+pop rdi
+0xdeadbeef 0x7fffffffe210

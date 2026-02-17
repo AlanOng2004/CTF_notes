@@ -1,0 +1,7 @@
+push 2 things and xor
+
+
+input + 4
+118
+check if equal
+

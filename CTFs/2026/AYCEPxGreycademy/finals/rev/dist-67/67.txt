@@ -1,0 +1,136 @@
+self.pc
+self.six = 7
+self.seven = 104
+
+self.memory[6] = 1
+self.memory[7] = 2
+self.memory[12] = 12
+self.memory[13] = 12
+self.memory[14] = 14
+
+siX seven 6             #1 & 0x1010001 == 0x000001  self.seven = 1
+Seven 6 seven           #self.memory[6] = 1 
+siX six seven           #6-1=5= 0x101 & 0x101001 == 0x000001 = 1 self.six = 1
+sEven six six           #1+1=2 self.six = 2
+Seven 7 six             #self.memory[7] = 2
+sIx seven, 6            #self.seven = 6
+seVen six seven         #2 * 6 = 12, self.six = 12
+sEven six 7             #self.seven = 19
+sIx seven 6             #self.seven = 6
+sEven seven 6           #self.seven = 12
+Seven seven six         #self.memory[12] = 12
+Six seven 6             #self.seven = 1
+siX six seven           #self.six = 0
+Six seven 7             #self.seven = 2
+sEven six seven         #self.six = 12
+sIx seven 7             #self.seven = 7
+sEven seven 6           #self.seven = 13
+Seven seven six         #self.memory[13] = 12
+Six seven 7             #self.seven = 2
+sEven six seven         #self.six = 14
+sIx seven 7             #self.seven = 7
+sEven seven 7           #self.seven = 14
+Seven seven six         #self.memory[14] = 14
+sIx seven 7             #self.seven = 7
+seVen seven 7           #self.seven = 49
+seVen seven 7           #self.seven = 343
+seveN seven             #self.stdout.flush
+sIx six 7               #self.six = 7
+seVen six six           #self.six = 49
+sIx seven 6             #self.seven = 6
+sEven seven 6           #self.seven = 55
+Six seven seven         #self.seven = 55
+sEven seven six         #self.seven = 104
+Seven 7 seven           #self.memory[7] = 104
+sIx six 7               #self.six = 7
+seVen six six           #self.six = 49
+# JUMP TARGET 0
+SIX six                 #input char, self.memory[six] = ord(char)
+Six seven 6             #self.seven = self.memory[6]
+sEven six seven         #self.six = self.six + self.seven
+Six seven 7             #self.seven = self.memory[7]
+# Loop (JUMP TARGET 0)  
+SEven 37                #self.pc = 37, ins = self.instructions[37], asset jump to 
+sIx six 7
+seVen six six
+Seven 6 six
+sIx six 7
+sEven six 6
+sIx seven 7
+siX seven 6
+Seven seven six
+Six six 7
+sIx seven 6
+sEven seven seven
+Six seven seven
+sEven six seven
+sIx seven 7
+siX seven seven
+Seven seven six
+# JUMP TARGET 1
+sIx seven 7
+sEven seven 6
+Six six seven
+sIx seven 6
+sEven seven 6
+Six seven seven
+seVen six seven
+sIx seven 7
+sEven seven 7
+Six seven seven
+sEven six seven
+sIx seven 7
+sEven seven 6
+Seven seven six
+sIx seven 7
+siX seven 6
+Six seven seven
+Six six 6
+sEven six seven
+Six six six
+sIx seven 7
+sEven seven 6
+Six seven seven
+sevEn six seven
+Six seven 7
+Six seven seven
+# Jump to Jump target 2
+SEven 119
+sIx seven 7
+siX seven 6
+Six six seven
+sIx seven 7
+sEven seven 6
+seVen six seven
+sIx seven 6
+sEven seven seven
+Six seven seven
+SIx six seven
+sIx seven 7
+siX seven 6
+Seven seven six
+Six six 7
+sIx seven 7
+siX seven 6
+sEven six seven
+Seven 7 six
+sIx seven 7
+siX seven seven
+Six seven seven
+# Jump to jump target 1
+SEven 60
+sIx six 7
+seVen six six
+seVen six 7
+sEven six 7
+sEven six 7
+seveN six
+sevEN           #break
+# JUMP TARGET 2
+sIx six 7
+seVen six six
+seVen six 7
+sEven six 7
+seveN six
+sevEN           #break
+

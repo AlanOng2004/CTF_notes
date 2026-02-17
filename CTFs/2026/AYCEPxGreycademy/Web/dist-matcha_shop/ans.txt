@@ -1,0 +1,10 @@
+http://challs.nusgreyhats.org:31003
+
+
+curl -X POST http://challs.nusgreyhats.org:31003/submit_order \
+  -d "item_name=Classic Matcha Latte" \
+  -d "sweetness=100%" \
+  -d "milk_type=Oat" \
+  -d "ice_level=Normal" \
+  -d "toppings=Boba"
+

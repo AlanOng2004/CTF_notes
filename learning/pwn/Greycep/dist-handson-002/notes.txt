@@ -1,0 +1,12 @@
+disass level
+break *<addr>
+0x7ffff7e02030
+
+0xc4febabe
+0x4013c4
+
+What is the saved return address at the end of this function?
+Similarly, set a breakpoint at one of these puts() calls
+Find the value of RSP, and use x/gx <addr> to view the contents of the stack
+Locate the saved RIP address (should look something like 0x401500)
+Provide your answer in hex (eg. 0x401500)
